@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    direction: rtl;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    line-height: 1.6;
+    color: #2C3E50;
+  }
+
+  /* הגדרות לעברית */
+  * {
+    direction: rtl;
+  }
+
+  /* סרגל גלילה מותאם */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #3498db;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2980b9;
+  }
+
+  /* בחירת טקסט */
+  ::selection {
+    background-color: #3498db;
+    color: white;
+  }
+}
+
+@layer components {
+  /* כפתורים מותאמים */
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-math hover:shadow-math-lg;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary-500 hover:bg-secondary-600 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-math hover:shadow-math-lg;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white font-medium py-3 px-6 rounded-lg transition-all duration-300;
+  }
+
+  /* כרטיסיות */
+  .card {
+    @apply bg-white rounded-xl shadow-math hover:shadow-math-lg transition-all duration-300 p-6;
+  }
+
+  .card-hover {
+    @apply transform hover:scale-105 transition-transform duration-300;
+  }
+
+  /* כותרות */
+  .heading-primary {
+    @apply text-4xl md:text-5xl font-bold text-math-blue mb-6;
+  }
+
+  .heading-secondary {
+    @apply text-2xl md:text-3xl font-semibold text-math-blue mb-4;
+  }
+
+  .heading-tertiary {
+    @apply text-xl md:text-2xl font-medium text-math-blue mb-3;
+  }
+
+  /* סעיפים */
+  .section {
+    @apply py-16 md:py-24 px-4 md:px-8;
+  }
+
+  .section-alt {
+    @apply py-16 md:py-24 px-4 md:px-8 bg-gray-50;
+  }
+
+  /* קונטיינר */
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  /* אנימציות מותאמות */
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  /* גרדיאנטים מתמטיים */
+  .gradient-math-blue {
+    background: linear-gradient(135deg, #2C3E50, #3498DB);
+  }
+
+  .gradient-math-green {
+    background: linear-gradient(135deg, #27AE60, #2ECC71);
+  }
+
+  .gradient-math-purple {
+    background: linear-gradient(135deg, #9B59B6, #8E44AD);
+  }
+
+  .gradient-math-orange {
+    background: linear-gradient(135deg, #E67E22, #F39C12);
+  }
+
+  /* אלמנטים מתמטיים */
+  .math-symbol {
+    @apply text-2xl font-math text-secondary-500;
+  }
+
+  .math-formula {
+    @apply font-math text-lg text-math-blue bg-gray-100 px-3 py-2 rounded-lg;
+  }
+
+  /* ניווט */
+  .nav-link {
+    @apply text-math-blue hover:text-primary-500 transition-colors duration-300 font-medium;
+  }
+
+  .nav-link-active {
+    @apply text-primary-500 font-semibold;
+  }
+
+  /* טופס */
+  .form-input {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium text-math-blue mb-2;
+  }
+
+  /* סליידר */
+  .swiper-pagination-bullet {
+    @apply bg-primary-500 opacity-50;
+  }
+
+  .swiper-pagination-bullet-active {
+    @apply opacity-100;
+  }
+
+  /* רספונסיביות */
+  .mobile-only {
+    @apply block md:hidden;
+  }
+
+  .desktop-only {
+    @apply hidden md:block;
+  }
+
+  .tablet-up {
+    @apply hidden lg:block;
+  }
+}
+
+@layer utilities {
+  /* כלים נוספים */
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .backdrop-blur-custom {
+    backdrop-filter: blur(10px);
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+} 

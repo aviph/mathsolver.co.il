@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  text-rendering: optimizeLegibility;
+  overscroll-behavior: none;
+}
+
+main {
+  width: 100%;
+  overflow: clip;
+}
