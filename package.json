@@ -4,7 +4,8 @@
   "description": "אתר פורטפוליו של אבי פילוסוף - מורה פרטי למתמטיקה",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
+    "dev:watch": "CHOKIDAR_USEPOLLING=true WATCHPACK_POLLING=true next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

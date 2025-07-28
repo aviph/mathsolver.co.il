@@ -28,7 +28,7 @@ export default function Home() {
       <div className="min-h-screen flex items-center justify-center bg-gradient-math-blue">
         <div className="text-center text-white">
           <div className="text-6xl mb-4 animate-pulse-slow">π</div>
-          <div className="text-2xl font-hebrew">MathSolver</div>
+          <div className="text-2xl font-hebrew">MathSolver - WSL Fixed!</div>
           <div className="text-lg mt-2">טוען...</div>
         </div>
       </div>

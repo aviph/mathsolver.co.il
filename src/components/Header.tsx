@@ -82,6 +82,11 @@ export default function Header() {
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
+              <img
+                src="/images/header-home-logo.png"
+                alt="לוגו הבית"
+                className="w-10 h-10 md:w-12 md:h-12 object-contain"
+              />
               <div className="text-3xl md:text-4xl text-secondary-500 font-math">π</div>
               <div className="text-xl md:text-2xl font-bold text-math-blue">
                 MATHSOLVER
