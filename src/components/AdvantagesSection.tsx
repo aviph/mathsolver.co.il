@@ -9,11 +9,7 @@ import {
   Home, 
   Smartphone,
   Award,
-  Heart,
-  Zap,
-  Shield,
-  TrendingUp,
-  Star
+  Zap
 } from 'lucide-react'
 
 const advantages = [

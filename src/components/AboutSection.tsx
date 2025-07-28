@@ -4,8 +4,6 @@ import { motion } from 'framer-motion'
 import { 
   GraduationCap, 
   Award, 
-  BookOpen, 
-  Users, 
   Target, 
   Heart,
   CheckCircle,
@@ -187,7 +185,7 @@ export default function AboutSection() {
         >
           <div className="max-w-4xl mx-auto">
             <div className="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-2xl p-8 md:p-12 border border-primary-100">
-              <div className="text-4xl mb-4">"</div>
+              <div className="text-4xl mb-4">&quot;</div>
               <p className="text-xl md:text-2xl text-math-blue font-medium leading-relaxed mb-6">
                 המתמטיקה היא שפת הטבע, ואני כאן כדי לעזור לכל תלמיד להבין ולאהב אותה
               </p>

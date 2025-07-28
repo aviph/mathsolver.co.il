@@ -6,10 +6,6 @@ import {
   GraduationCap, 
   Users, 
   Star, 
-  Filter,
-  ChevronLeft,
-  ChevronRight,
-  Heart,
   Award
 } from 'lucide-react'
 

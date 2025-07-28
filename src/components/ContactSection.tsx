@@ -11,10 +11,7 @@ import {
   MapPin, 
   Clock, 
   Send, 
-  CheckCircle,
-  MessageSquare,
-  User,
-  Calendar
+  CheckCircle
 } from 'lucide-react'
 
 const contactSchema = z.object({
@@ -98,7 +95,7 @@ export default function ContactSection() {
     resolver: zodResolver(contactSchema)
   })
 
-  const onSubmit = async (data: ContactFormData) => {
+  const onSubmit = async () => {
     setIsSubmitting(true)
     
     // סימולציה של שליחת הטופס

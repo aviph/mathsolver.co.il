@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Play, ExternalLink, Users, Eye, ThumbsUp, Calendar } from 'lucide-react'
+import { Play, ExternalLink, Eye, ThumbsUp } from 'lucide-react'
 
 const videos = [
   {

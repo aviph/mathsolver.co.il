@@ -63,7 +63,7 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   const [currentIndex, setCurrentIndex] = useState(0)
-  const [isPlaying, setIsPlaying] = useState(true)
+  const [isPlaying] = useState(true)
 
   useEffect(() => {
     if (!isPlaying) return
@@ -132,7 +132,7 @@ export default function TestimonialsSection() {
                   >
                     <Quote className="w-12 h-12 text-secondary-300 mx-auto mb-4" />
                     <p className="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
-                      "{testimonials[currentIndex].text}"
+                      &quot;{testimonials[currentIndex].text}&quot;
                     </p>
                   </motion.div>
 
