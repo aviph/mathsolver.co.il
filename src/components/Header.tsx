@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { 
-  Home, 
   Users, 
   User, 
   Star, 
@@ -15,7 +14,6 @@ import {
 } from 'lucide-react'
 
 const navItems = [
-  { id: 'home', label: 'בית', icon: Home, color: 'text-blue-500' },
   { id: 'testimonials', label: 'מספרים עלי...', icon: Users, color: 'text-green-500' },
   { id: 'about', label: 'מי אני?', icon: User, color: 'text-cyan-500' },
   { id: 'advantages', label: 'היתרונות שלי', icon: Star, color: 'text-orange-500' },
@@ -78,19 +76,17 @@ export default function Header() {
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* לוגו */}
             <motion.div 
-              className="flex items-center space-x-2 space-x-reverse"
-              whileHover={{ scale: 1.05 }}
+              className="flex items-center"
+              whileHover={{ scale: 1.25 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              onClick={() => scrollToSection('home')}
+              style={{ cursor: 'pointer' }}
             >
-              <img
-                src="/images/header-home-logo.png"
-                alt="לוגו הבית"
-                className="w-10 h-10 md:w-12 md:h-12 object-contain"
+              <img 
+                src="/images/header-home-logo.png" 
+                alt="Mathsolver - מורה פרטי למתמטיקה" 
+                className="h-12 md:h-16 w-auto"
               />
-              <div className="text-3xl md:text-4xl text-secondary-500 font-math">π</div>
-              <div className="text-xl md:text-2xl font-bold text-math-blue">
-                MATHSOLVER
-              </div>
             </motion.div>
 
             {/* ניווט דסקטופ */}
