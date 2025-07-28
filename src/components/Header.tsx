@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { 
+  Home,
   Users, 
   User, 
   Star, 
@@ -32,6 +33,15 @@ export default function Header() {
       setIsScrolled(window.scrollY > 50)
       
       // זיהוי הסעיף הפעיל
+      const scrollY = window.scrollY
+      
+      // בדיקה מיוחדת לסעיף הבית (התחלת הדף)
+      if (scrollY < 200) {
+        setActiveSection('home')
+        return
+      }
+      
+      // זיהוי הסעיפים האחרים
       const sections = navItems.map(item => item.id)
       const currentSection = sections.find(sectionId => {
         const element = document.getElementById(sectionId)
@@ -188,6 +198,28 @@ export default function Header() {
       {/* ניווט אנכי לדסקטופ */}
       <div className="fixed right-4 top-1/2 transform -translate-y-1/2 z-40 hidden xl:block">
         <div className="flex flex-col space-y-3">
+          {/* כפתור בית */}
+          <motion.button
+            onClick={() => scrollToSection('home')}
+            className={`group relative p-3 rounded-full transition-all duration-300 ${
+              activeSection === 'home'
+                ? 'bg-primary-500 text-white shadow-math-lg' 
+                : 'bg-white/80 text-math-blue hover:bg-primary-500 hover:text-white shadow-math'
+            }`}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0 }}
+          >
+            <Home className="w-5 h-5 text-blue-500" />
+            
+            {/* טולטיפ */}
+            <div className="absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-math-blue text-white px-3 py-1 rounded-lg text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+              בית
+            </div>
+          </motion.button>
+
           {navItems.map((item, index) => {
             const Icon = item.icon
             const isActive = activeSection === item.id
@@ -205,7 +237,7 @@ export default function Header() {
                 whileTap={{ scale: 0.9 }}
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: index * 0.1 }}
+                transition={{ delay: (index + 1) * 0.1 }}
               >
                 <Icon className="w-5 h-5" />
                 
