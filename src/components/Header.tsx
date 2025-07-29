@@ -83,7 +83,7 @@ export default function Header() {
         transition={{ duration: 0.5 }}
       >
         <div className="container-custom px-4">
-          <div className="flex items-center justify-between h-16 md:h-20">
+          <div className="flex items-center h-16 md:h-20">
             {/* לוגו */}
             <motion.div 
               className="flex items-center"
@@ -100,19 +100,24 @@ export default function Header() {
             </motion.div>
 
             {/* ניווט דסקטופ */}
-            <nav className="hidden lg:flex items-center space-x-6 space-x-reverse">
+            <nav className="hidden lg:flex items-center space-x-4 space-x-reverse mr-6 flex-1">
               {navItems.map((item) => {
                 const Icon = item.icon
                 const isActive = activeSection === item.id
+                const isContact = item.id === 'contact'
                 
                 return (
                   <motion.button
                     key={item.id}
                     onClick={() => scrollToSection(item.id)}
-                    className={`flex items-center space-x-2 space-x-reverse px-3 py-2 rounded-lg transition-all duration-300 ${
-                      isActive 
-                        ? 'bg-primary-500 text-white shadow-math' 
-                        : 'text-math-blue hover:bg-primary-50 hover:text-primary-500'
+                    className={`flex items-center space-x-2 space-x-reverse px-8 py-2 rounded-lg transition-all duration-300 ${
+                      isContact
+                        ? 'bg-secondary-500 text-white hover:bg-secondary-600'
+                        : isActive 
+                          ? 'bg-primary-500 text-white shadow-math' 
+                          : isScrolled
+                            ? 'text-white hover:bg-primary-50 hover:text-primary-500'
+                            : 'text-math-blue hover:bg-primary-50 hover:text-primary-500'
                     }`}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -124,24 +129,19 @@ export default function Header() {
               })}
             </nav>
 
-            {/* כפתור צור קשר */}
-            <motion.button
-              className="hidden md:flex items-center space-x-2 space-x-reverse bg-secondary-500 text-white px-4 py-2 rounded-lg font-medium hover:bg-secondary-600 transition-colors duration-300"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => scrollToSection('contact')}
-            >
-              <Phone className="w-4 h-4" />
-              <span>צור קשר</span>
-            </motion.button>
-
-            {/* כפתור המבורגר למובייל */}
-            <button
-              className="lg:hidden p-2 text-math-blue hover:text-primary-500 transition-colors duration-300"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            >
-              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
+            <div className="flex-1 flex justify-end">
+              {/* כפתור המבורגר למובייל */}
+                            <button
+                className={`lg:hidden p-2 transition-colors duration-300 ${
+                  isScrolled 
+                    ? 'text-white hover:text-primary-500' 
+                    : 'text-math-blue hover:text-primary-500'
+                }`}
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              >
+                {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              </button>
+            </div>
           </div>
         </div>
       </motion.header>
@@ -161,34 +161,29 @@ export default function Header() {
                 {navItems.map((item) => {
                   const Icon = item.icon
                   const isActive = activeSection === item.id
+                  const isContact = item.id === 'contact'
                   
                   return (
                     <motion.button
                       key={item.id}
                       onClick={() => scrollToSection(item.id)}
-                      className={`flex items-center space-x-3 space-x-reverse px-4 py-3 rounded-lg transition-all duration-300 ${
-                        isActive 
-                          ? 'bg-primary-500 text-white' 
-                          : 'text-math-blue hover:bg-primary-50 hover:text-primary-500'
+                      className={`flex items-center space-x-3 space-x-reverse px-10 py-3 rounded-lg transition-all duration-300 ${
+                        isContact
+                          ? 'bg-secondary-500 text-white hover:bg-secondary-600'
+                          : isActive 
+                            ? 'bg-primary-500 text-white' 
+                            : 'text-math-blue hover:bg-primary-50 hover:text-primary-500'
                       }`}
                       whileHover={{ x: -5 }}
                       whileTap={{ scale: 0.95 }}
                     >
-                      <Icon className={`w-5 h-5 ${item.color}`} />
+                      <Icon className={`w-5 h-5 ${isContact ? 'text-white' : item.color}`} />
                       <span className="font-medium">{item.label}</span>
                     </motion.button>
                   )
                 })}
                 
-                <motion.button
-                  className="flex items-center space-x-3 space-x-reverse px-4 py-3 bg-secondary-500 text-white rounded-lg font-medium hover:bg-secondary-600 transition-colors duration-300 mt-4"
-                  whileHover={{ x: -5 }}
-                  whileTap={{ scale: 0.95 }}
-                  onClick={() => scrollToSection('contact')}
-                >
-                  <Phone className="w-5 h-5" />
-                  <span>צור קשר</span>
-                </motion.button>
+
               </div>
             </nav>
           </motion.div>
@@ -204,7 +199,7 @@ export default function Header() {
             className={`group relative p-3 rounded-full transition-all duration-300 ${
               activeSection === 'home'
                 ? 'bg-primary-500 text-white shadow-math-lg' 
-                : 'bg-white/80 text-math-blue hover:bg-primary-500 hover:text-white shadow-math'
+                : 'bg-white/90 text-math-blue hover:bg-primary-500 hover:text-white shadow-math'
             }`}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -231,7 +226,7 @@ export default function Header() {
                 className={`group relative p-3 rounded-full transition-all duration-300 ${
                   isActive 
                     ? 'bg-primary-500 text-white shadow-math-lg' 
-                    : 'bg-white/80 text-math-blue hover:bg-primary-500 hover:text-white shadow-math'
+                    : 'bg-white/90 text-math-blue hover:bg-primary-500 hover:text-white shadow-math'
                 }`}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
