@@ -14,6 +14,14 @@
     color: #2C3E50;
   }
 
+  /* פונט מותאם לכותרות ראשיות */
+  .hero-title {
+    font-family: 'Arial Black', 'Impact', 'Helvetica Black', 'Arial Bold', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3), 0 0 20px rgba(255,255,255,0.5);
+  }
+
   /* הגדרות לעברית */
   * {
     direction: rtl;

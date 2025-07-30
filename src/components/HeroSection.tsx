@@ -88,10 +88,10 @@ export default function HeroSection() {
           <div className="absolute inset-0 bg-white/20"></div>
 
           {/* תוכן מוביל - על התמונה */}
-          <div className="relative z-20 h-full flex items-center justify-center">
+          <div className="relative z-20 h-full flex flex-col justify-start pt-20">
             <div className="text-center px-8">
               <motion.h1
-                className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-black drop-shadow-lg"
+                className="hero-title text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-8 text-black"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
