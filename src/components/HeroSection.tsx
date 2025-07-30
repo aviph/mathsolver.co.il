@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronLeft, ChevronRight, Play, Pause, Phone, Check } from 'lucide-react'
+import FloatingWhatsAppButton from './FloatingWhatsAppButton'
 
 const heroImages = [
   {
@@ -77,6 +78,7 @@ export default function HeroSection() {
 
   return (
     <div className="min-h-screen flex">
+      <FloatingWhatsAppButton />
       {/* חלק ימין - תמונה עם טקסט (50%) */}
       <div className="w-1/2 relative overflow-hidden">
         <div
