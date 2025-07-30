@@ -16,10 +16,40 @@
 
   /* פונט מותאם לכותרות ראשיות */
   .hero-title {
-    font-family: 'Arial Black', 'Impact', 'Helvetica Black', 'Arial Bold', sans-serif;
-    font-weight: 900;
+    font-family: var(--font-rubik-glitch), 'Arial Black', 'Impact', 'Helvetica Black', 'Arial Bold', sans-serif;
+    font-weight: 400;
     letter-spacing: 0.05em;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3), 0 0 20px rgba(255,255,255,0.5);
+    text-shadow: 
+      2px 2px 4px rgba(0,0,0,0.3), 
+      0 0 20px rgba(255,255,255,0.5),
+      0 0 30px rgba(52, 152, 219, 0.3),
+      0 0 40px rgba(52, 152, 219, 0.2);
+    animation: glitch-effect 3s infinite;
+  }
+
+  /* אנימציית גליץ' לכותרת הראשית */
+  @keyframes glitch-effect {
+    0%, 100% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+  }
+
+  /* פונט Rubik Glitch לשימוש כללי */
+  .font-rubik-glitch {
+    font-family: var(--font-rubik-glitch), sans-serif;
+    font-weight: 400;
   }
 
   /* הגדרות לעברית */

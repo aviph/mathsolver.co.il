@@ -1,6 +1,17 @@
 import type { Metadata } from 'next'
 import './globals.css'
 
+// ייבוא פונט Rubik Glitch מ-Google Fonts
+import { Rubik_Glitch } from 'next/font/google'
+
+// הגדרת פונט Rubik Glitch
+const rubikGlitch = Rubik_Glitch({
+  weight: '400',
+  subsets: ['hebrew', 'latin'],
+  display: 'swap',
+  variable: '--font-rubik-glitch',
+})
+
 export const metadata: Metadata = {
   title: 'אבי פילוסוף - מורה פרטי למתמטיקה | www.mathsolver.co.il',
   description: 'מורה פרטי למתמטיקה מנוסה באזור נתניה והשרון. ליווי צמוד לכל הרמות, מכיתה ד ועד יב. תוצאות מוכחות עם מעל 15 שנות ניסיון.',
@@ -61,7 +72,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="he" dir="rtl">
+    <html lang="he" dir="rtl" className={rubikGlitch.variable}>
       <head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
