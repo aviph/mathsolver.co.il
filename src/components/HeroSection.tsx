@@ -100,10 +100,11 @@ export default function HeroSection() {
               </motion.h1>
 
               <motion.div
-                className="text-xl md:text-2xl mb-8 text-black drop-shadow-lg"
+                className="font-suez-one text-2xl md:text-3xl lg:text-4xl mb-8 text-black drop-shadow-lg hover:text-blue-600 transition-colors duration-300 cursor-default"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
+                whileHover={{ scale: 1.02 }}
               >
                 היי! שמי אבי פילוסוף, ברוכים הבאים לאתר שלי!
               </motion.div>

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import './globals.css'
 
-// ייבוא פונט Rubik Glitch מ-Google Fonts
-import { Rubik_Glitch } from 'next/font/google'
+// ייבוא פונטים מ-Google Fonts
+import { Rubik_Glitch, Suez_One } from 'next/font/google'
 
 // הגדרת פונט Rubik Glitch
 const rubikGlitch = Rubik_Glitch({
@@ -10,6 +10,14 @@ const rubikGlitch = Rubik_Glitch({
   subsets: ['hebrew', 'latin'],
   display: 'swap',
   variable: '--font-rubik-glitch',
+})
+
+// הגדרת פונט Suez One
+const suezOne = Suez_One({
+  weight: '400',
+  subsets: ['hebrew', 'latin'],
+  display: 'swap',
+  variable: '--font-suez-one',
 })
 
 export const metadata: Metadata = {
@@ -72,7 +80,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="he" dir="rtl" className={rubikGlitch.variable}>
+    <html lang="he" dir="rtl" className={`${rubikGlitch.variable} ${suezOne.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />

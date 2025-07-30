@@ -52,6 +52,13 @@
     font-weight: 400;
   }
 
+  /* פונט Suez One לשימוש כללי */
+  .font-suez-one {
+    font-family: var(--font-suez-one), sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+
   /* הגדרות לעברית */
   * {
     direction: rtl;
