@@ -1,29 +1,23 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    domains: ['localhost'],
-    formats: ['image/webp', 'image/avif'],
-  },
-  trailingSlash: false,
-  poweredByHeader: false,
-  compress: true,
-  reactStrictMode: true,
-  // הגדרות ל-WSL
-  webpack: (config, { dev, isServer }) => {
-    if (dev && !isServer) {
-      // שיפור file watching ב-WSL
-      config.watchOptions = {
-        poll: 1000,
-        aggregateTimeout: 300,
-        ignored: ['**/node_modules', '**/.next']
-      }
-    }
-    return config
-  },
-  // הגדרות נוספות ל-WSL
+  // הגדרת allowedDevOrigins לפתרון בעיית Cross origin request
+  allowedDevOrigins: [
+    '10.100.102.80', // כתובת ה-IP שמופיעה באזהרה
+    'localhost',
+    '127.0.0.1'
+  ],
+  
+  // הגדרות נוספות שיכולות להיות שימושיות
   experimental: {
-    // שיפור file watching - הוסר כי לא נתמך בגרסה הנוכחית
-  }
+    // אם אתה משתמש ב-App Router
+    appDir: true,
+  },
+  
+  // הגדרות תמונות אם נדרש
+  images: {
+    domains: [],
+    remotePatterns: [],
+  },
 }
 
 module.exports = nextConfig 

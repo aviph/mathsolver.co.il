@@ -11,7 +11,7 @@ const testimonials = [
     grade: 'כיתה יב',
     score: '95%',
     text: 'אבי עזר לי להבין מתמטיקה כמו שלא הבנתי מעולם. הציון שלי עלה מ-60 ל-95!',
-    image: '/images/testimonial-1.jpg',
+    image: '/images/testimonials-section/2012/2012.Kim.jpg',
     subject: 'חשבון דיפרנציאלי ואינטגרלי'
   },
   {
@@ -20,7 +20,7 @@ const testimonials = [
     grade: 'כיתה י',
     score: '88%',
     text: 'הגישה האישית של אבי עשתה את כל ההבדל. עכשיו אני אוהב מתמטיקה!',
-    image: '/images/testimonial-2.jpg',
+    image: '/images/testimonials-section/2012/2012-06-Shaked_Rotem.jpg',
     subject: 'גיאומטריה אנליטית'
   },
   {
