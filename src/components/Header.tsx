@@ -93,7 +93,7 @@ export default function Header() {
               style={{ cursor: 'pointer' }}
             >
               <img 
-                src="/images/header-home-logo.png" 
+                src="/images/header/header-home-logo.png" 
                 alt="Mathsolver - מורה פרטי למתמטיקה" 
                 className="h-12 md:h-16 w-auto"
               />
