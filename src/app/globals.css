@@ -59,6 +59,103 @@
     letter-spacing: 0.02em;
   }
 
+  /* פונט Heebo לשימוש כללי */
+  .font-heebo {
+    font-family: var(--font-heebo), sans-serif;
+    font-weight: 400;
+  }
+
+  .font-heebo-medium {
+    font-family: var(--font-heebo), sans-serif;
+    font-weight: 500;
+  }
+
+  .font-heebo-semibold {
+    font-family: var(--font-heebo), sans-serif;
+    font-weight: 600;
+  }
+
+  /* פונט Varela Round לשימוש כללי */
+  .font-varela-round {
+    font-family: var(--font-varela-round), sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+  }
+
+  /* פונט Playpen Sans לשימוש כללי */
+  .font-playpen-sans {
+    font-family: 'Playpen Sans', cursive, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+
+  .font-playpen-sans-medium {
+    font-family: 'Playpen Sans', cursive, sans-serif;
+    font-weight: 500;
+  }
+
+  .font-playpen-sans-semibold {
+    font-family: 'Playpen Sans', cursive, sans-serif;
+    font-weight: 600;
+  }
+
+  .font-playpen-sans-bold {
+    font-family: 'Playpen Sans', cursive, sans-serif;
+    font-weight: 700;
+  }
+
+  /* פונטים בסגנון כתב מחובר עברי */
+  .font-hebrew-cursive {
+    font-family: 'Noto Sans Hebrew', 'Heebo', 'Rubik', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    font-style: italic;
+  }
+
+  .font-hebrew-cursive-bold {
+    font-family: 'Noto Sans Hebrew', 'Heebo', 'Rubik', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    font-style: italic;
+  }
+
+  /* פונט בסגנון כתב גדולים */
+  .font-hebrew-large {
+    font-family: 'Noto Sans Hebrew', 'Heebo', 'Rubik', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  /* פונט בסגנון כתב מחובר מתקדם */
+  .font-hebrew-connected {
+    font-family: 'Varela Round', 'Heebo', 'Rubik', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    line-height: 1.4;
+  }
+
+  /* פונט בסגנון כתב יד */
+  .font-hebrew-handwriting {
+    font-family: 'Heebo', 'Rubik', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    font-style: italic;
+  }
+
+  /* פונט Alef - פונט עברי ייחודי */
+  .font-alef {
+    font-family: 'Alef', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+
+  .font-alef-bold {
+    font-family: 'Alef', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
   /* הגדרות לעברית */
   * {
     direction: rtl;

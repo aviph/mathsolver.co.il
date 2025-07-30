@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 // ייבוא פונטים מ-Google Fonts
-import { Rubik_Glitch, Suez_One } from 'next/font/google'
+import { Rubik_Glitch, Suez_One, Heebo, Varela_Round } from 'next/font/google'
 
 // הגדרת פונט Rubik Glitch
 const rubikGlitch = Rubik_Glitch({
@@ -18,6 +18,22 @@ const suezOne = Suez_One({
   subsets: ['hebrew', 'latin'],
   display: 'swap',
   variable: '--font-suez-one',
+})
+
+// הגדרת פונט Heebo
+const heebo = Heebo({
+  weight: ['400', '500', '600'],
+  subsets: ['hebrew', 'latin'],
+  display: 'swap',
+  variable: '--font-heebo',
+})
+
+// הגדרת פונט Varela Round
+const varelaRound = Varela_Round({
+  weight: '400',
+  subsets: ['hebrew', 'latin'],
+  display: 'swap',
+  variable: '--font-varela-round',
 })
 
 export const metadata: Metadata = {
@@ -80,7 +96,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="he" dir="rtl" className={`${rubikGlitch.variable} ${suezOne.variable}`}>
+    <html lang="he" dir="rtl" className={`${rubikGlitch.variable} ${suezOne.variable} ${heebo.variable} ${varelaRound.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -88,6 +104,11 @@ export default function RootLayout({
         <meta name="theme-color" content="#3498db" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="format-detection" content="telephone=no" />
+        
+        {/* ייבוא פונטים עבריים בסגנון כתב מחובר */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;500;600;700&family=Noto+Sans+Hebrew:wght@400;500;600;700&family=Heebo:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&family=Alef:wght@400;700&display=swap" rel="stylesheet" />
         
         {/* Schema.org structured data */}
         <script

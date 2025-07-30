@@ -44,9 +44,8 @@ const heroImages = [
 ]
 
 const advantages = [
-  'ליווי צמוד של מורה מנוסה',
-  'לאורך כל שנת הלימודים לכל הרמות',
-  'החל מכיתה ד ועד יב',
+  'ליווי צמוד של מורה מנוסה לאורך כל שנת הלימודים',
+  'לכל הרמות החל מכיתה ז\' ועד יב\'',
   'באזור נתניה ומושבי השרון'
 ]
 
@@ -88,8 +87,9 @@ export default function HeroSection() {
           <div className="absolute inset-0 bg-white/20"></div>
 
           {/* תוכן מוביל - על התמונה */}
-          <div className="relative z-20 h-full flex flex-col justify-start pt-20">
-            <div className="text-center px-8">
+          <div className="relative z-20 h-full flex flex-col justify-between py-20">
+            {/* חלק עליון - כותרת וברכה */}
+            <div className="text-center px-8 pt-10">
               <motion.h1
                 className="hero-title text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-8 text-black"
                 initial={{ opacity: 0, y: 20 }}
@@ -108,9 +108,12 @@ export default function HeroSection() {
               >
                 היי! שמי אבי פילוסוף, ברוכים הבאים לאתר שלי!
               </motion.div>
+            </div>
 
+            {/* חלק תחתון - יתרונות וכפתור */}
+            <div className="text-center px-8 pb-10">
               <motion.div
-                className="space-y-4 mb-8"
+                className="font-alef space-y-6 mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
@@ -118,13 +121,14 @@ export default function HeroSection() {
                 {advantages.map((advantage, index) => (
                   <motion.div
                     key={index}
-                    className="flex items-center space-x-3 space-x-reverse justify-center"
+                    className="group flex items-center space-x-3 space-x-reverse justify-center hover:bg-white/10 rounded-lg px-4 py-2 transition-all duration-300 cursor-default"
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 1 + index * 0.1 }}
+                    whileHover={{ scale: 1.02, x: -5 }}
                   >
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 drop-shadow-lg" />
-                    <span className="text-lg text-black drop-shadow-lg">{advantage}</span>
+                    <Check className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-blue-500 flex-shrink-0 drop-shadow-lg group-hover:scale-110 transition-transform duration-300" />
+                    <span className="font-alef-bold text-xl md:text-2xl lg:text-3xl text-blue-500 drop-shadow-lg group-hover:text-blue-700 transition-colors duration-300">{advantage}</span>
                   </motion.div>
                 ))}
               </motion.div>
