@@ -9,8 +9,7 @@ const nextConfig = {
   
   // הגדרות נוספות שיכולות להיות שימושיות
   experimental: {
-    // אם אתה משתמש ב-App Router
-    appDir: true,
+    // App Router כבר מופעל כברירת מחדל בגרסה החדשה
   },
   
   // הגדרות תמונות אם נדרש
