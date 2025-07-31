@@ -322,6 +322,57 @@ const testimonials = [
     letterImage: '/images/testimonials-section/2021/2021-01_ziva_sarosi.png',
     imageFit: 'contain' as const,
   },
+
+  // 2022
+  {
+    id: 45,
+    name: 'רוי יצחק (2022)',
+    grade: 'כיתה ח',
+    letterImage: '/images/testimonials-section/2022/2022-02_roy.png',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 46,
+    name: 'שירלי גרינשטיין (2022)',
+    grade: '',
+    letterImage: '/images/testimonials-section/2022/2022-03_shirly_g.png',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 47,
+    name: 'ניקולס כהן (2022) 1',
+    grade: '',
+    letterImage: '/images/testimonials-section/2022/2022-05_lio.jpg',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 48,
+    name: 'ניקולס כהן (2022) 2',
+    grade: '',
+    letterImage: '/images/testimonials-section/2022/2022-06_lio.jpg',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 49,
+    name: 'אליסה ביקוב (2022)',
+    grade: 'הכנה לקורס פסיכומטרי',
+    letterImage: '/images/testimonials-section/2022/2022-11_AlisaBikov.png',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 50,
+    name: 'שרון ליכט (2022)',
+    grade: '',
+    letterImage: '/images/testimonials-section/2022/2022-11_ori1.jpg',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 51,
+    name: 'שירלי גרינשטיין (2022)',
+    grade: '',
+    letterImage: '/images/testimonials-section/2022/2023-05_shirly_g.png',
+    imageFit: 'contain' as const,
+  },
 ]
 
 /////////////////////////////////////////////////////////////
