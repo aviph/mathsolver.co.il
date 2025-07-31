@@ -27,37 +27,37 @@ const testimonials = [
     id: 4,
     name: 'דוד חסון',
     grade: 'כיתה ט',
-    letterImage: '/images/testimonials-section/2014/2014-01-David_Hason.jpg',
+    letterImage: '/images/testimonials-section/2014/2014-01_David_Hason.jpg',
   },
   {
     id: 5,
     name: 'נטע שור',
     grade: 'כיתה י',
-    letterImage: '/images/testimonials-section/2014/2014-05-Neta_Shor.jpg',
+    letterImage: '/images/testimonials-section/2014/2014-05_Neta_shor.jpg',
   },
   {
     id: 6,
     name: 'נור ישראלי',
     grade: 'כיתה יא',
-    letterImage: '/images/testimonials-section/2014/2014-05-Nor_Israeli2_1.jpg',
+    letterImage: '/images/testimonials-section/2014/2014-05_Nor_israeli2_1.jpg',
   },
   {
     id: 7,
     name: 'רועי הובר',
     grade: 'כיתה יב',
-    letterImage: '/images/testimonials-section/2014/2014-05-Roi_Hover2.jpg',
+    letterImage: '/images/testimonials-section/2014/2014-05_Roi_Hover2.jpg',
   },
   {
     id: 8,
     name: 'ספיר כפרי',
     grade: 'כיתה יב',
-    letterImage: '/images/testimonials-section/2014/2014-05-Sapir_cafri2.jpg',
+    letterImage: '/images/testimonials-section/2014/2014-05_Sapir_cafri2.jpg',
   },
   {
     id: 9,
     name: 'סיגלית - אמא של רועי הובר',
     grade: '',
-    letterImage: '/images/testimonials-section/2014/2014-05-Sigalit_Roi_Hover.jpg',
+    letterImage: '/images/testimonials-section/2014/2014-05_sigalit_Roi_Hover.jpg',
   },
   {
     id: 10,
@@ -76,6 +76,18 @@ const testimonials = [
     name: 'בית ספר תפוז',
     grade: '',
     letterImage: '/images/testimonials-section/2014/2014-Tapuz.jpg',
+  },
+  {
+    id: 13,
+    name: 'בית ספר לאה גולדברג',
+    grade: '',
+    letterImage: '/images/testimonials-section/2015/2015-02-05_lea_goldberg.jpg',
+  },
+  {
+    id: 14,
+    name: 'אריאל',
+    grade: 'כיתה י',
+    letterImage: '/images/testimonials-section/2015/2015-02-07_Ariel_1.jpg',
   },
 ]
 
@@ -145,7 +157,7 @@ export default function TestimonialsSection() {
 
       <div className="container-custom relative z-10">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-8"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -259,12 +271,12 @@ export default function TestimonialsSection() {
 
                         {/* פרטי התלמיד - מופיעים על התמונה */}
                         <motion.div
-                          className="absolute bottom-8 left-8 right-8 z-10"
-                          initial={{ opacity: 0, y: 50 }}
+                          className="absolute top-8 left-8 right-8 z-10"
+                          initial={{ opacity: 0, y: -50 }}
                           animate={{ opacity: isActive ? 1 : 0.8, y: 0 }}
                           transition={{ duration: 0.8, delay: 0.3 }}
                         >
-                          <div className="text-right">
+                          <div className="text-center">
                             {/* שם התלמיד - גדול ובולט */}
                             <motion.h2
                               className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 drop-shadow-2xl"
@@ -302,7 +314,7 @@ export default function TestimonialsSection() {
 
                         {/* אפקט זוהר סביב השם */}
                         <motion.div
-                          className="absolute bottom-8 left-8 right-8 h-32 pointer-events-none"
+                          className="absolute top-8 left-8 right-8 h-32 pointer-events-none"
                           initial={{ opacity: 0 }}
                           animate={{ opacity: isActive ? 0.3 : 0 }}
                           transition={{ duration: 1, delay: 0.8 }}
