@@ -276,6 +276,36 @@ const testimonials = [
     letterImage: '/images/testimonials-section/2019/2019-08-22-bdulach.jpg',
     imageFit: 'contain' as const,
   },
+
+  // 2020
+  {
+    id: 39,
+    name: 'עדן כיל (2020)',
+    grade: 'כיתה יב',
+    letterImage: '/images/testimonials-section/2020/2020-06-12_eden_chil.jpg',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 40,
+    name: 'כרמית למפרט (2020)',
+    grade: '',
+    letterImage: '/images/testimonials-section/2020/2020-06-14_carmit_lamfert.jpg',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 41,
+    name: 'משפחת בדולח (2020)',
+    grade: '',
+    letterImage: '/images/testimonials-section/2020/2020-06-20_bdulach.jpg',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 42,
+    name: 'מירה בדולח (2020) אמא של יקיר ',
+    grade: '',
+    letterImage: '/images/testimonials-section/2020/2020-06-mira_bdulach.png',
+    imageFit: 'contain' as const,
+  },
 ]
 
 /////////////////////////////////////////////////////////////
