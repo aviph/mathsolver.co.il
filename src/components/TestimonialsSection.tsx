@@ -179,6 +179,43 @@ const testimonials = [
     letterImage: '/images/testimonials-section/2016/2016-09_asaf_altresh.jpg',
     imageFit: 'contain' as const,
   },
+
+  // 2017
+  {
+    id: 26,
+    name: 'ענבה חוה (2017) 1',
+    grade: 'כיתה יב',
+    letterImage: '/images/testimonials-section/2017/2017-05-23_Inbar1.jpg',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 27,
+    name: 'ענבה חוה (2017) 2',
+    grade: 'כיתה יב',
+    letterImage: '/images/testimonials-section/2017/2017-05-23_Inbar2.jpg',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 28,
+    name: 'גרגורי בלוק (2017)',
+    grade: 'כיתה יא',
+    letterImage: '/images/testimonials-section/2017/2017-06_gregori_blok.png',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 29,
+    name: 'רועי שוקר (2017)',
+    grade: 'כיתה יב',
+    letterImage: '/images/testimonials-section/2017/2017-07_roi_shoker.png',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 30,
+    name: 'יקיר בדולח (2017)',
+    grade: 'כיתה יב',
+    letterImage: '/images/testimonials-section/2017/2017-11-14_yakir_bdolach_1.jpg',
+    imageFit: 'contain' as const,
+  },
 ]
 
 /////////////////////////////////////////////////////////////
