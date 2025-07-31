@@ -156,6 +156,29 @@ const testimonials = [
     letterImage: '/images/testimonials-section/2015/2015-Lea_Goldbereg_HiliEmili_1.jpg',
     imageFit: 'contain' as const,
   },
+
+  // 2016
+  {
+    id: 22,
+    name: 'שי דקל (2016)',
+    grade: 'כיתה יא',
+    letterImage: '/images/testimonials-section/2016/2016-06_shay_dekel.jpg',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 23,
+    name: 'עילם רפאלי (2016)',
+    grade: 'כיתה ז',
+    letterImage: '/images/testimonials-section/2016/2016-07_eilam_refaeli.jpg',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 24,
+    name: 'אסף אלטרש (2016)',
+    grade: 'כיתה יב',
+    letterImage: '/images/testimonials-section/2016/2016-09_asaf_altresh.jpg',
+    imageFit: 'contain' as const,
+  },
 ]
 
 /////////////////////////////////////////////////////////////
