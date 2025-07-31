@@ -83,10 +83,10 @@ export default function Header() {
         transition={{ duration: 0.5 }}
       >
         <div className="container-custom px-4">
-          <div className="flex items-center h-16 md:h-20">
+          <div className="flex items-center min-h-12 md:min-h-14">
             {/* לוגו */}
             <motion.div 
-              className="flex items-center"
+              className="flex items-center -my-2 md:-my-3"
               whileHover={{ scale: 1.25 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
               onClick={() => scrollToSection('home')}
@@ -110,7 +110,7 @@ export default function Header() {
                   <motion.button
                     key={item.id}
                     onClick={() => scrollToSection(item.id)}
-                    className={`flex items-center space-x-2 space-x-reverse px-8 py-2 rounded-lg transition-all duration-300 ${
+                    className={`flex items-center space-x-2 space-x-reverse px-8 py-1 rounded-lg transition-all duration-300 ${
                       isContact
                         ? 'bg-secondary-500 text-white hover:bg-secondary-600'
                         : isActive 
@@ -123,7 +123,7 @@ export default function Header() {
                     whileTap={{ scale: 0.95 }}
                   >
                     <Icon className="w-4 h-4" />
-                    <span className="font-medium">{item.label}</span>
+                    <span className="font-medium whitespace-nowrap">{item.label}</span>
                   </motion.button>
                 )
               })}
@@ -150,7 +150,7 @@ export default function Header() {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            className="fixed top-16 md:top-20 left-0 right-0 bg-white/95 backdrop-blur-custom shadow-math-lg z-40 lg:hidden"
+            className="fixed top-12 md:top-14 left-0 right-0 bg-white/95 backdrop-blur-custom shadow-math-lg z-40 lg:hidden"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
@@ -167,7 +167,7 @@ export default function Header() {
                     <motion.button
                       key={item.id}
                       onClick={() => scrollToSection(item.id)}
-                      className={`flex items-center space-x-3 space-x-reverse px-10 py-3 rounded-lg transition-all duration-300 ${
+                      className={`flex items-center space-x-3 space-x-reverse px-10 py-2 rounded-lg transition-all duration-300 ${
                         isContact
                           ? 'bg-secondary-500 text-white hover:bg-secondary-600'
                           : isActive 
@@ -178,7 +178,7 @@ export default function Header() {
                       whileTap={{ scale: 0.95 }}
                     >
                       <Icon className={`w-5 h-5 ${isContact ? 'text-white' : item.color}`} />
-                      <span className="font-medium">{item.label}</span>
+                      <span className="font-medium whitespace-nowrap">{item.label}</span>
                     </motion.button>
                   )
                 })}
