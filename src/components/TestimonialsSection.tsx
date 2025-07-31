@@ -23,6 +23,8 @@ const testimonials = [
     grade: 'כיתה יב',
     letterImage: '/images/testimonials-section/2013/2013-12-David_rozenberg.jpg',
   },
+
+  // 2014
   {
     id: 4,
     name: 'דוד חסון',
@@ -77,6 +79,8 @@ const testimonials = [
     grade: '',
     letterImage: '/images/testimonials-section/2014/2014-Tapuz.jpg',
   },
+
+  // 2015
   {
     id: 13,
     name: 'בית ספר לאה גולדברג',
@@ -88,6 +92,48 @@ const testimonials = [
     name: 'אריאל',
     grade: 'כיתה י',
     letterImage: '/images/testimonials-section/2015/2015-02-07_Ariel_1.jpg',
+  },
+  {
+    id: 15,
+    name: 'יהונתן אוברקלייד',
+    grade: 'כיתה יב',
+    letterImage: '/images/testimonials-section/2015/2015-05_Jonatan_Oberklide2.jpg',
+  },
+  {
+    id: 16,
+    name: 'מאי פרום',
+    grade: 'כיתה יא',
+    letterImage: '/images/testimonials-section/2015/2015-05-17_Mai_and_gal_1.jpg',
+  },
+  {
+    id: 17,
+    name: '1 רון לירוב',
+    grade: 'כיתה ח',
+    letterImage: '/images/testimonials-section/2015/2015-06-10_Ron_lirov2_1.jpg',
+  },
+  {
+    id: 18,
+    name: '2 רון לירוב',
+    grade: 'כיתה ח',
+    letterImage: '/images/testimonials-section/2015/2015-06-10_Ron2.jpg',
+  },
+  {
+    id: 19,
+    name: 'ספיר כפרי',
+    grade: 'כיתה  יב',
+    letterImage: '/images/testimonials-section/2015/2015-07-01_Sapir_Cafri_1.jpg',
+  },
+  {
+    id: 20,
+    name: 'בית ספר לאה גולדברג - 1',
+    grade: '',
+    letterImage: '/images/testimonials-section/2015/2015-LEa_Godberg_1.jpg',
+  },
+  {
+    id: 21,
+    name: 'הילי ואמילי',
+    grade: 'כיתה ה',
+    letterImage: '/images/testimonials-section/2015/2015-Lea_Goldbereg_HiliEmili_1.jpg',
   },
 ]
 
