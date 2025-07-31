@@ -146,6 +146,48 @@ pnpm build
 - **Code Splitting**: אוטומטי
 - **Caching**: אגרסיבי
 
+
+# מדריך להגדרת התאמת תמונות ב-Testimonials Section
+
+## שדה imageFit החדש
+
+הוספנו שדה חדש `imageFit` לכל testimonial שמאפשר לשלוט באופן הצגת התמונה.
+
+### האפשרויות הזמינות:
+
+1. **`'contain'`** (ברירת מחדל) - התמונה תוצג במלואה בתוך הקונטיינר, עם רווחים ריקים אם יש צורך
+2. **`'cover'`** - התמונה תמלא את כל הקונטיינר, עם חיתוך אם יש צורך
+3. **`'fill'`** - התמונה תימתח למלא את כל הקונטיינר (עלולה לעוות את התמונה)
+4. **`'scale-down'`** - התמונה תוצג בגודל המקורי או קטנה יותר אם היא גדולה מהקונטיינר
+
+### דוגמה לשימוש:
+
+```typescript
+{
+  id: 1,
+  name: 'שם התלמיד',
+  grade: 'כיתה י',
+  letterImage: '/path/to/image.jpg',
+  imageFit: 'contain' as const, // או 'cover', 'fill', 'scale-down'
+}
+```
+
+### המלצות:
+
+- **`contain`** - מומלץ לרוב התמונות כדי להבטיח שכל התמונה נראית
+- **`cover`** - מומלץ לתמונות עם רקע אחיד או כשחשוב למלא את כל החלל
+- **`fill`** - מומלץ רק לתמונות עם יחס גובה-רוחב זהה לקונטיינר
+- **`scale-down`** - מומלץ לתמונות קטנות שלא צריך למתוח
+
+### שינוי ברירת המחדל:
+
+אם לא מציינים `imageFit`, המערכת תשתמש ב-`contain` כברירת מחדל. 
+
+
+
+
+
+
 ## 🤝 תרומה
 
 1. Fork את הפרויקט

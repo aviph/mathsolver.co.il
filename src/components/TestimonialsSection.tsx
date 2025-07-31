@@ -7,133 +7,154 @@ import { ChevronLeft, ChevronRight, Star, Quote, Play, Pause } from 'lucide-reac
 const testimonials = [
   {
     id: 1,
-    name: 'קים ציסלביץ',
+    name: 'קים ציסלביץ (2012)',
     grade: 'אחרי צבא - קורס השלמה ל 4 יחל',
     letterImage: '/images/testimonials-section/2012/2012-Kim.jpg',
+    imageFit: 'contain' as const, // 'cover' | 'contain' | 'fill' | 'scale-down'
   },
   {
     id: 2,
-    name: 'שקד רותם',
+    name: 'שקד רותם (2012)',
     grade: 'כיתה י',
     letterImage: '/images/testimonials-section/2012/2012-06-Shaked_Rotem.jpg',
+    imageFit: 'contain' as const,
   },
   {
     id: 3,
-    name: 'דוד רוזנברג',
+    name: 'דוד רוזנברג (2013)',
     grade: 'כיתה יב',
     letterImage: '/images/testimonials-section/2013/2013-12-David_rozenberg.jpg',
+    imageFit: 'contain' as const,
   },
 
   // 2014
   {
     id: 4,
-    name: 'דוד חסון',
+    name: 'דוד חסון (2014)',
     grade: 'כיתה ט',
     letterImage: '/images/testimonials-section/2014/2014-01_David_Hason.jpg',
+    imageFit: 'contain' as const,
   },
   {
     id: 5,
-    name: 'נטע שור',
+    name: 'נטע שור (2014)',
     grade: 'כיתה י',
     letterImage: '/images/testimonials-section/2014/2014-05_Neta_shor.jpg',
+    imageFit: 'contain' as const,
   },
   {
     id: 6,
-    name: 'נור ישראלי',
+    name: 'נור ישראלי (2014)',
     grade: 'כיתה יא',
     letterImage: '/images/testimonials-section/2014/2014-05_Nor_israeli2_1.jpg',
+    imageFit: 'scale-down' as const, // 'cover' | 'contain' | 'fill' | 'scale-down'
   },
   {
     id: 7,
-    name: 'רועי הובר',
+    name: 'רועי הובר (2014)',
     grade: 'כיתה יב',
     letterImage: '/images/testimonials-section/2014/2014-05_Roi_Hover2.jpg',
+    imageFit: 'contain' as const,
   },
   {
     id: 8,
-    name: 'ספיר כפרי',
+    name: 'ספיר כפרי (2014)',
     grade: 'כיתה יב',
     letterImage: '/images/testimonials-section/2014/2014-05_Sapir_cafri2.jpg',
+    imageFit: 'contain' as const,
   },
   {
     id: 9,
-    name: 'סיגלית - אמא של רועי הובר',
+    name: 'סיגלית - אמא של רועי הובר (2014)',
     grade: '',
     letterImage: '/images/testimonials-section/2014/2014-05_sigalit_Roi_Hover.jpg',
+    imageFit: 'contain' as const,
   },
   {
     id: 10,
-    name: 'בית ספר תפוז',
+    name: 'בית ספר תפוז (2014)',
     grade: '',
     letterImage: '/images/testimonials-section/2014/2014-06_Tapuz_1.jpg',
+    imageFit: 'contain' as const,
   },
   {
     id: 11,
-    name: 'דנה',
+    name: 'דנה (2014)',
     grade: 'כיתה ח',
     letterImage: '/images/testimonials-section/2014/2014-07_Dana.jpg',
+    imageFit: 'contain' as const,
   },
   {
     id: 12,
-    name: 'בית ספר תפוז',
+    name: 'בית ספר תפוז (2014)',
     grade: '',
     letterImage: '/images/testimonials-section/2014/2014-Tapuz.jpg',
+    imageFit: 'contain' as const,
   },
 
   // 2015
   {
     id: 13,
-    name: 'בית ספר לאה גולדברג',
+    name: 'בית ספר לאה גולדברג (2015)',
     grade: '',
     letterImage: '/images/testimonials-section/2015/2015-02-05_lea_goldberg.jpg',
+    imageFit: 'contain' as const,
   },
   {
     id: 14,
-    name: 'אריאל',
+    name: 'אריאל (2015)',
     grade: 'כיתה י',
     letterImage: '/images/testimonials-section/2015/2015-02-07_Ariel_1.jpg',
+    imageFit: 'contain' as const,
   },
   {
     id: 15,
-    name: 'יהונתן אוברקלייד',
+    name: 'יהונתן אוברקלייד (2015)',
     grade: 'כיתה יב',
     letterImage: '/images/testimonials-section/2015/2015-05_Jonatan_Oberklide2.jpg',
+    imageFit: 'contain' as const,
   },
   {
     id: 16,
-    name: 'מאי פרום',
+    name: 'מאי פרום (2015)',
     grade: 'כיתה יא',
     letterImage: '/images/testimonials-section/2015/2015-05-17_Mai_and_gal_1.jpg',
+    imageFit: 'contain' as const,
   },
   {
     id: 17,
-    name: '1 רון לירוב',
+    name: '1 רון לירוב (2015)',
     grade: 'כיתה ח',
     letterImage: '/images/testimonials-section/2015/2015-06-10_Ron_lirov2_1.jpg',
+    imageFit: 'contain' as const,
   },
   {
     id: 18,
-    name: '2 רון לירוב',
+    name: '2 רון לירוב (2015)',
     grade: 'כיתה ח',
     letterImage: '/images/testimonials-section/2015/2015-06-10_Ron2.jpg',
+    imageFit: 'contain' as const,
   },
   {
     id: 19,
-    name: 'ספיר כפרי',
+    name: 'ספיר כפרי (2015)',
     grade: 'כיתה  יב',
     letterImage: '/images/testimonials-section/2015/2015-07-01_Sapir_Cafri_1.jpg',
+    imageFit: 'contain' as const,
   },
   {
     id: 20,
-    name: 'בית ספר לאה גולדברג - 1',
+    name: 'בית ספר לאה גולדברג - 1 (2015)',
     grade: '',
     letterImage: '/images/testimonials-section/2015/2015-LEa_Godberg_1.jpg',
+    imageFit: 'contain' as const,
   },
   {
     id: 21,
-    name: 'הילי ואמילי',
+    name: 'הילי ואמילי (2015)',
     grade: 'כיתה ה',
     letterImage: '/images/testimonials-section/2015/2015-Lea_Goldbereg_HiliEmili_1.jpg',
+    imageFit: 'contain' as const,
   },
 ]
 
@@ -291,7 +312,8 @@ export default function TestimonialsSection() {
                               <img
                                 src={testimonial.letterImage}
                                 alt={`מכתב של ${testimonial.name}`}
-                                className="w-full h-full object-cover rounded-3xl"
+                                className="w-full h-full rounded-3xl"
+                                style={{ objectFit: testimonial.imageFit || 'contain' }}
                                 onError={(e) => {
                                   const target = e.target as HTMLImageElement;
                                   target.style.display = 'none';
