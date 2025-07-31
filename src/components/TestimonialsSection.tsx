@@ -216,6 +216,66 @@ const testimonials = [
     letterImage: '/images/testimonials-section/2017/2017-11-14_yakir_bdolach_1.jpg',
     imageFit: 'contain' as const,
   },
+
+  // 2018
+  {
+    id: 31,
+    name: 'שרית ציגלר 2018 (אמא של תלמיד)',
+    grade: '',
+    letterImage: '/images/testimonials-section/2018/2018_facebook_nir1_1.jpg',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 32,
+    name: '1 מירה  בדולח (2018) אמא של יקיר',
+    grade: '',
+    letterImage: '/images/testimonials-section/2018/2018-06-08-bdolach_1.jpg',
+    imageFit: 'contain' as const,
+  },
+
+  // 2019
+  {
+    id: 33,
+    name: '2 מירה  בדולח (2018) אמא של יקיר',
+    grade: '',
+    letterImage: '/images/testimonials-section/2019/2019-05-17-bdolach_1.png',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 34,
+    name: 'ליאת סקל (2019)',
+    grade: '',
+    letterImage: '/images/testimonials-section/2019/2019-05-30_liat_sakal.jpg',
+    imageFit: 'contain' as const,
+  },  
+  {
+    id: 35,
+    name: 'אנה קפלן (2019)',
+    grade: '',
+    letterImage: '/images/testimonials-section/2019/2019-06-11_ana_kaplan.jpg',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 36,
+    name: 'עדי שובל (2019)',
+    grade: 'כיתה יב',
+    letterImage: '/images/testimonials-section/2019/2019-06-19_adi_shoval.jpg',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 37,
+    name: 'לימור שובל (2019)',
+    grade: '',
+    letterImage: '/images/testimonials-section/2019/2019-06-19-_limor_shoval.jpg',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 38,
+    name: 'מירה בדולח (2019) אמא של יקיר ',
+    grade: '',
+    letterImage: '/images/testimonials-section/2019/2019-08-22-bdulach.jpg',
+    imageFit: 'contain' as const,
+  },
 ]
 
 /////////////////////////////////////////////////////////////
