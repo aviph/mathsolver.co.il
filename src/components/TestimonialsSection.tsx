@@ -306,6 +306,22 @@ const testimonials = [
     letterImage: '/images/testimonials-section/2020/2020-06-mira_bdulach.png',
     imageFit: 'contain' as const,
   },
+
+  // 2021
+  {
+    id: 43,
+    name: 'שירה ושחר (2021)',
+    grade: '',
+    letterImage: '/images/testimonials-section/2021/2021.jpg',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 44,
+    name: 'זיוה סרוסי (2021)',
+    grade: '',
+    letterImage: '/images/testimonials-section/2021/2021-01_ziva_sarosi.png',
+    imageFit: 'contain' as const,
+  },
 ]
 
 /////////////////////////////////////////////////////////////
