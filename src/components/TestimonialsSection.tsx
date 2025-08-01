@@ -409,7 +409,7 @@ const testimonials = [
   {
     id: 56,
     name: 'סתיו מלכה (2024)',
-    grade: 'כיתה ט',
+    grade: 'כיתה י',
     letterImage: '/images/testimonials-section/2024/2024-05-27_stav_malka.png',
     imageFit: 'contain' as const,
   },
