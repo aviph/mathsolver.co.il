@@ -1,10 +1,10 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import {
   User,
-  Heart,
-  CheckCircle
+  Heart
 } from 'lucide-react'
 
 export default function AboutSection() {
@@ -57,9 +57,11 @@ export default function AboutSection() {
             viewport={{ once: true }}
           >
             <div className="w-48 h-64 md:w-56 md:h-80 overflow-hidden shadow-lg">
-              <img
-                src="images/about-section/Avi.jpg"
+              <Image
+                src="/images/about-section/Avi.jpg"
                 alt="אבי פילוסוף"
+                width={224}
+                height={320}
                 className="w-full h-full object-cover"
               />
             </div>

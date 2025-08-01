@@ -105,10 +105,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="format-detection" content="telephone=no" />
         
-        {/* ייבוא פונטים עבריים בסגנון כתב מחובר */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;500;600;700&family=Noto+Sans+Hebrew:wght@400;500;600;700&family=Heebo:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&family=Alef:wght@400;700&display=swap" rel="stylesheet" />
+
         
         {/* Schema.org structured data */}
         <script

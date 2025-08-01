@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import Image from 'next/image'
 import { 
   Home,
   Users, 
@@ -86,15 +87,17 @@ export default function Header() {
           <div className="flex items-center min-h-12 md:min-h-14">
             {/* לוגו */}
             <motion.div 
-              className="flex items-center -my-2 md:-my-3"
+              className="flex items-center"
               whileHover={{ scale: 1.25 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
               onClick={() => scrollToSection('home')}
               style={{ cursor: 'pointer' }}
             >
-              <img 
+              <Image 
                 src="/images/header/header-home-logo.png" 
                 alt="Mathsolver - מורה פרטי למתמטיקה" 
+                width={64}
+                height={64}
                 className="h-12 md:h-16 w-auto"
               />
             </motion.div>

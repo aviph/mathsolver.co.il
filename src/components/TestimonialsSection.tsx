@@ -1,8 +1,9 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronLeft, ChevronRight, Star, Quote, Play, Pause } from 'lucide-react'
+import { motion } from 'framer-motion'
+import Image from 'next/image'
+import { ChevronLeft, ChevronRight, Quote, Play, Pause } from 'lucide-react'
 
 const testimonials = [
   {
@@ -442,7 +443,6 @@ const testimonials = [
 export default function TestimonialsSection() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isPlaying, setIsPlaying] = useState(true)
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
   const intervalRef = useRef<NodeJS.Timeout | null>(null)
 
   useEffect(() => {
@@ -524,7 +524,6 @@ export default function TestimonialsSection() {
                 const testimonial = testimonials[index]
                 const isActive = position === 0
                 const isNext = position === 1
-                const isPrev = position === 2
 
                 return (
                   <motion.div
@@ -543,8 +542,7 @@ export default function TestimonialsSection() {
                       z: isActive ? 20 : isNext ? 10 : 5
                     }}
                     transition={{ duration: 0.7, ease: "easeInOut" }}
-                    onHoverStart={() => setHoveredIndex(index)}
-                    onHoverEnd={() => setHoveredIndex(null)}
+
                     onClick={() => !isActive && goToTestimonial(index)}
                   >
                     <div className={`w-full h-full rounded-3xl overflow-hidden cursor-pointer transition-all duration-500 ${isActive ? 'shadow-2xl' : 'shadow-lg'
@@ -588,9 +586,11 @@ export default function TestimonialsSection() {
                             transition={{ duration: 0.8 }}
                           >
                             {testimonial.letterImage ? (
-                              <img
+                              <Image
                                 src={testimonial.letterImage}
                                 alt={`מכתב של ${testimonial.name}`}
+                                width={800}
+                                height={600}
                                 className="w-full h-full rounded-3xl"
                                 style={{ objectFit: testimonial.imageFit || 'contain' }}
                                 onError={(e) => {
