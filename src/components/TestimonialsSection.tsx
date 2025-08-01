@@ -373,6 +373,68 @@ const testimonials = [
     letterImage: '/images/testimonials-section/2022/2023-05_shirly_g.png',
     imageFit: 'contain' as const,
   },
+
+  // 2023
+  {
+    id: 52,
+    name: 'אליסה ביקוב (2023)',
+    grade: 'הכנה לקורס פסיכומטרי',
+    letterImage: '/images/testimonials-section/2023/2023-04-alisa_bikov.png',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 53,
+    name: 'ליאור גרינשטיין (2023)',
+    grade: 'כיתה ט',
+    letterImage: '/images/testimonials-section/2023/2023-05-lior.png',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 54,
+    name: 'משה סקל (2023)',
+    grade: '',
+    letterImage: '/images/testimonials-section/2023/2023-08-moshe.png',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 55,
+    name: 'שירה אלוני (2023)',
+    grade: 'כיתה ט',
+    letterImage: '/images/testimonials-section/2023/2023-09-24-shira-aloni.png',
+    imageFit: 'contain' as const,
+  },
+
+  // 2024
+  {
+    id: 56,
+    name: 'סתיו מלכה (2024)',
+    grade: 'כיתה ט',
+    letterImage: '/images/testimonials-section/2024/2024-05-27_stav_malka.png',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 57,
+    name: 'מאיה גניש (2024)',
+    grade: 'כיתה יב',
+    letterImage: '/images/testimonials-section/2024/2024-07_maya_genish.png',
+    imageFit: 'contain' as const,
+  },
+
+  // 2025
+  {
+    id: 58,
+    name: 'שירן מימון (אמא של תמר) (2025)',
+    grade: '',
+    letterImage: '/images/testimonials-section/2025/2025-03_shiran_mimon.png',
+    imageFit: 'contain' as const,
+  },
+  {
+    id: 59,
+    name: 'שירה אלוני (2025)',
+    grade: 'כיתה י',
+    letterImage: '/images/testimonials-section/2025/2025-05_shira_aloni.png',
+    imageFit: 'contain' as const,
+  },
 ]
 
 /////////////////////////////////////////////////////////////
