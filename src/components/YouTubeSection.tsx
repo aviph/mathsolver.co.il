@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Play, ExternalLink, Eye, ThumbsUp, Filter } from 'lucide-react'
+import { Play, ExternalLink, Filter } from 'lucide-react'
 
 // שמות הפותרים
 const solvers = [
