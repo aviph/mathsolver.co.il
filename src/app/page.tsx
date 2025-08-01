@@ -7,7 +7,6 @@ import TestimonialsSection from '@/components/TestimonialsSection'
 import AboutSection from '@/components/AboutSection'
 import AdvantagesSection from '@/components/AdvantagesSection'
 import YouTubeSection from '@/components/YouTubeSection'
-import StudentsSection from '@/components/StudentsSection'
 import ContactSection from '@/components/ContactSection'
 import ScrollProgress from '@/components/ScrollProgress'
 
@@ -67,12 +66,7 @@ export default function Home() {
       <section id="youtube" className="section-alt">
         <YouTubeSection />
       </section>
-      
-      {/* אני והתלמידים */}
-      <section id="students" className="section gradient-math-orange">
-        <StudentsSection />
-      </section>
-      
+           
       {/* דברו איתי */}
       <section id="contact" className="section-alt">
         <ContactSection />

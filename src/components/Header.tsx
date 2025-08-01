@@ -9,7 +9,6 @@ import {
   User, 
   Star, 
   Youtube, 
-  GraduationCap, 
   Phone,
   Menu,
   X
@@ -20,7 +19,6 @@ const navItems = [
   { id: 'about', label: 'מי אני?', icon: User, color: 'text-cyan-500' },
   { id: 'advantages', label: 'היתרונות שלי', icon: Star, color: 'text-orange-500' },
   { id: 'youtube', label: 'ערוץ היוטיוב', icon: Youtube, color: 'text-red-500' },
-  { id: 'students', label: 'אני והתלמידים', icon: GraduationCap, color: 'text-purple-500' },
   { id: 'contact', label: 'דברו איתי', icon: Phone, color: 'text-pink-500' },
 ]
 

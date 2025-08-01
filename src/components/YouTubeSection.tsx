@@ -31,6 +31,22 @@ const subjects = [
     id: 'בעיות קנייה ומכירה',
     name: 'בעיות קנייה ומכירה',
   },
+  {
+    id: 'סדרות',
+    name: 'סדרות',
+  },
+  {
+    id: 'טריגונומטריה',
+    name: 'טריגונומטריה',
+  },
+  {
+    id: 'סטטיסטיקה',
+    name: 'סטטיסטיקה',
+  },
+  {
+    id: 'גיאומטריה',
+    name: 'גיאומטריה',
+  },
 ]
 
 // שנות בגרות
@@ -40,6 +56,9 @@ const years = [
   },
   {
     id: '2024',
+  },
+  {
+    id: '2025',
   },
 ]
 
@@ -69,7 +88,6 @@ const videos = [
     year: '2023',
     questionnaire: '35182 (801)',
   },
-
   {
     id: 'avi2',
     title: 'פתרון בגרות מתמטיקה 35481 (804) חורף 2023: שאלה 2 (משוואת מעגל)',
@@ -80,17 +98,69 @@ const videos = [
     year: '2023',
     questionnaire: '35481 (804)',
   },
+  {
+    id: 'avi3',
+    title: 'פתרון בגרות מתמטיקה חורף 2023 35182 (801): שאלה 3 (סדרה חשבונית)',
+    subject: 'סדרות',
+    solver: 'אבי פילוסוף',
+    youtubeId: 'cOoZpanvHX0',
+    youtubeUrl: 'https://www.youtube.com/watch?v=cOoZpanvHX0&t=37s',
+    year: '2023',
+    questionnaire: '35182 (801)',
+  },
+  {
+    id: 'avi4',
+    title: 'פתרון בגרות מתמטיקה חורף 2023 35182 (801): שאלה 4 (הנדסה אנליטית: משוואת הקו הישר)',
+    subject: 'הנדסה אנליטית',
+    solver: 'אבי פילוסוף',
+    youtubeId: 'G40Fw2_G8vE',
+    youtubeUrl: 'https://www.youtube.com/watch?v=G40Fw2_G8vE&t=15s',
+    year: '2023',
+    questionnaire: '35182 (801)',
+  },
+  {
+    id: 'avi5',
+    title: 'פתרון בגרות מתמטיקה חורף 2023 35182 (801): שאלה 5 (טריגו)',
+    subject: 'טריגונומטריה',
+    solver: 'אבי פילוסוף',
+    youtubeId: 'P_YfvgGBH34',
+    youtubeUrl: 'https://www.youtube.com/watch?v=P_YfvgGBH34&t=2s', 
+    year: '2023',
+    questionnaire: '35182 (801)',
+  },
+  {
+    id: 'avi6',
+    title: 'פתרון בגרות מתמטיקה חורף 2023 35182 (801): שאלה 6 (סטטיסטיקה: חישוב ממוצע )',
+    subject: 'סטטיסטיקה',
+    solver: 'אבי פילוסוף',
+    youtubeId: 'QfAJgcpQ8Rg',
+    youtubeUrl: 'https://www.youtube.com/watch?v=QfAJgcpQ8Rg',
+    year: '2023',
+    questionnaire: '35182 (801)',
+  },
 
   // אילון פרץ
   {
     id: 'eilon1',
-    title: 'פתרון בגרות במתמטיקה 572 קיץ 2024 ב׳ #בגרותבמתמטיקה #בגרות',
+    title: 'פתרון בגרות מתמטיקה חורף 2023 35182 (801): שאלה 5 (טריגו)',
     subject: 'פתרון בגרות',
     solver: 'אילון פרץ',
     youtubeId: 'uo8Ym9ItLUY', 
     youtubeUrl: 'https://www.youtube.com/watch?v=uo8Ym9ItLUY&list=PLVnhb7g4G12FMOwTviyitClMl2bR7EnUS&index=1',
     year: '2024',
     questionnaire: '35572',
+  },
+
+  // עובד לב ארי
+  {
+    id: 'ovad1',
+    title: '🎓 בגרות 481 קיץ 2025 מועד ב שאלה 4-גיאומטריה עם מעגל.',
+    subject: 'גיאומטריה',
+    solver: 'עובד לב ארי',
+    youtubeId: 'NW7Rp_uLwUs',
+    youtubeUrl: 'https://www.youtube.com/watch?v=NW7Rp_uLwUs&list=PLejElsCmvhTBqmEMYcEMuUwARdwyWPrpJ',
+    year: '2025',
+    questionnaire: '35481 (804)',
   },
 ]
 

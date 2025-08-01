@@ -35,8 +35,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: 'אימייל',
-    value: 'avi@mathsolver.co.il',
-    link: 'mailto:avi@mathsolver.co.il',
+    value: 'click808@gmail.com',
+    link: 'mailto:click808@gmail.com',
     color: 'text-blue-500'
   },
   {
@@ -95,18 +95,33 @@ export default function ContactSection() {
     resolver: zodResolver(contactSchema)
   })
 
-  const onSubmit = async () => {
+  const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true)
     
-    // סימולציה של שליחת הטופס
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-    reset()
-    
-    // איפוס ההודעה אחרי 5 שניות
-    setTimeout(() => setIsSubmitted(false), 5000)
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+
+      if (!response.ok) {
+        throw new Error('שגיאה בשליחת ההודעה')
+      }
+
+      setIsSubmitted(true)
+      reset()
+      
+      // איפוס ההודעה אחרי 5 שניות
+      setTimeout(() => setIsSubmitted(false), 5000)
+    } catch (error) {
+      console.error('שגיאה בשליחת הטופס:', error)
+      alert('שגיאה בשליחת ההודעה. אנא נסו שוב.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
